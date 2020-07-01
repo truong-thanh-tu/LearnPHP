@@ -39,7 +39,7 @@ if (isset($_SESSION['name']))
 ?>
 </body>
 </html>
-<?php
-Cookie thường được dùng để lưu trữ các tùy chòn riêng của trang web từng user. Nhó là một file nhỏ được server chỉ định lưu trữ trong máy tính khác hàngvà PHP có thể truy xuất tớ được 
 
+<?php
+/*Cookie thường được dùng để lưu trữ các tùy chòn riêng của trang web từng user. Nhó là một file nhỏ được server chỉ định lưu trữ trong máy tính khác hàngvà PHP có thể truy xuất tớ được */
 ?>

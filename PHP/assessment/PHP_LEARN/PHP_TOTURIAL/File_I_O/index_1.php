@@ -13,4 +13,7 @@ fclose( $file );
 
 echo ( "File size : $filesize bytes" );
 echo ( "<pre>$filetext</pre>" );
+echo date(
+
+)
 ?>

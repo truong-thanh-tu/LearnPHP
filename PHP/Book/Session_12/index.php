@@ -4,7 +4,7 @@
 hoặc là những tùy chọn riêng tư
 1./ Session : Biến session trong php được sử dụng để lưu trữ thông tin của người dùng hoặc lưu trữ tùy chọn cấu hình hệ thống cho người dùng
 a./ Cách dùng:
-- Trước khi dùng session bạn phải đặt session_star() phía trước mõi file();
+- Trước khi dùng session bạn phải đặt session_star() phía trước mõi file.txt();
 b./ Lưu trữ session:
 - Dòng lệnh session_start()  có chức nâng là sẽ đăng ký phiên làm việc lên server, từ đó server sẽ tạo ra một ID riêng cho khác hàng
 - $_session tất cả các session được lưu hết vào biết $_session
@@ -41,5 +41,5 @@ if (isset($_SESSION['name']))
 </html>
 
 <?php
-/*Cookie thường được dùng để lưu trữ các tùy chòn riêng của trang web từng user. Nhó là một file nhỏ được server chỉ định lưu trữ trong máy tính khác hàngvà PHP có thể truy xuất tớ được */
+/*Cookie thường được dùng để lưu trữ các tùy chòn riêng của trang web từng user. Nhó là một file.txt nhỏ được server chỉ định lưu trữ trong máy tính khác hàngvà PHP có thể truy xuất tớ được */
 ?>

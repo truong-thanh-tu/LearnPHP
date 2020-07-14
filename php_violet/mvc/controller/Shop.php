@@ -1,12 +1,17 @@
 <?php
-class Shop{
+class Shop extends Controller {
     function  index(){
-        echo "Page in Shop";
+
+       $products = $this->model('ProductModel');
+       $this->view('share',['Page'=>'Shop','File'=>'page','Product'=>$products->Product()]);
     }
     function detail_product(){
-        echo "Page in detail_product";
+        $this->view('share',['Page'=>'Detail_product','File'=>'page']);
     }
     function checkout(){
-        echo "Page in checkout";
+        $this->view('share',['Page'=>'Checkout','File'=>'page']);
+    }
+    function shopping_cart(){
+        $this->view('share',['Page'=>'Shopping_cart','File'=>'page']);
     }
 }

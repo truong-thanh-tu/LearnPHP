@@ -1,6 +1,7 @@
 <?php
-class Contact{
+class Contact extends Controller {
     function index(){
-        echo "Page in Contact";
+           $this->model('ProductModel');
+            $this->view('share',['Page'=>'Contact','File'=>'page']);
     }
 }

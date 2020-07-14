@@ -1,14 +1,16 @@
 <?php
 class Home extends Controller {
     function index(){
-        $product_1 = $this->model("ProductModel");
-        echo $product_1->getProduct();
+        $models = $this->model('ProductModel');
+        $this->view('Share',[
+            'Page'=>'Home',
+            'File'=>'page',
+            'Slider'=>$models->Slider(),
+            'Freatures'=>$models->Freatures(),
+            'Product'=>$models->Product()
+        ]);
     }
-    function Show(){
-        $sum = $this->model("ProductModel");
-        $sum->Calculater(1,3);
-        $this->view("head",[number=>$sum]);
-    }
+
 }
 
 ?>
